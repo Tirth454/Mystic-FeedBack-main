@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Copernicus";
+    src: url("../public/CopernicusTrial-Book-BF66160450c2e92.ttf")
+        format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Copernicus", sans-serif;
+    }
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #ff0000;
+}
+
+/* Custom text selection */
+::selection {
+    background-color: #ec4e39;
+    color: #262622;
+}
+
+::-moz-selection {
+    background-color: #ec4e39;
+    color: #262622;
+}
